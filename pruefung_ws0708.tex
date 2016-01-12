@@ -1,5 +1,6 @@
 \renewcommand{\ldate}{2016-01-12}
-% \includepdf[pages=-]{pruefungsangabe_wahrStat_ws0708}
+\includepdf[pages=-]{pruefungsangabe_wahrStat_ws0708}
+\includepdf[pages=-]{pruefungsangabe_wahrStat_ws0708_tabelle}
 
 \section{Lösung für die Prüfung WS 2007/08}
 
@@ -96,7 +97,7 @@ Zeichne von $S^*$ das Histogramm: Dazu zeichnen wir über $x_j$ ein Rechteck mit
 
 Höhe des Rechtecks über $x_j$: $ \frac{1}{npq} \cdot h_j = P(S^* = x_j) = \binom n j \cdot p^j \cdot q^{n-j} $\\
 
-% 1 \includegraphicsdeluxe{histogrammWS0708ex.jpg}{Histogramm}{So könnte das Histogramm aussehen}{fig:histogrammWS0708ex}
+\includegraphicsdeluxe{histogrammWS0708ex.jpg}{Histogramm}{So könnte das Histogramm aussehen}{fig:histogrammWS0708ex}
 Man kann zeigen: Für große n nähert sich das Histogramm der Gaußschen Glockenkurve an (Abb. \ref{fig:histogrammWS0708ex}):
 $ \varphi(x) = \frac{1}{\sqrt{2\pi}} \cdot exp\rbr{-\frac{x^2}{2}}$ Dabei ist $\varphi(x) $ die Dichte der Normalverteilung. 
 
@@ -119,7 +120,7 @@ $ P(a \leq S \leq b)
 \approx \int_{u}^{v} \varphi(x) dx = \Phi(v) - \Phi(u) 
 $ (noch ungenau).
 
-% 2-3 \includegraphicsdeluxe{besserWSRechtecke.jpg}{Histogramm}{Histogramm: u und v}{fig:besserWSRechtecke}
+\includegraphicsdeluxe{besserWSRechtecke.jpg}{Histogramm}{Histogramm: u und v}{fig:besserWSRechtecke}
 Beim ersten und letzten Rechteck fehlt eine Hälfte (Abb. \ref{fig:besserWSRechtecke}), deshalb besser: 
 
 $P \rbr{\underbrace{\frac{a - \frac{1}{2} - np}{\sqrt{npq}}}_{u} \leq S^* \leq \underbrace{\frac{b + \frac{1}{2} - np}{\sqrt{npq}}}_{v} }$
