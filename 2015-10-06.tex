@@ -33,23 +33,25 @@ $ r_k(A) = | \{ j : 1\leq j \leq k \textrm{ und } \omega_j \in A \} | \cdot \fra
 \subsection{Empirisches Gesetz}\index{Empirisches Gesetz}
 Von der Stabilisierung der relativen Häufigkeit von A. Für $ k\rightarrow \infty $ läuft $r_k(A) $ gegen einen festen Wert $ P(A) $.
 
-\subsection{Übung 4.2 (Buch)} Lotto 6 aus 49.
+\subsection{Übung 4.2 (Buch) - Lotto 6 aus 49} 
 Die ersten 2058 Ziehungen enthielten 198 mal die 13 und 248 mal die 43 ($ \Omega=\{(a_1 < a_2 < a_3 < a_4 < a_5 < a_6) : 1\leq a_i\leq 49 \} $). Der Datenvektor hat die Länge $ n = 2058 $. \\
 $ A_{13}: $ "13 wird gezogen", $ r(A_{13}) = \frac{198}{2058} = 0.096 $\\
 $ A_{43}: $ "43 wird gezogen", $ r(A_{43}) = \frac{248}{2058} = 0.120 $\\
 Wie groß ist die relative Häufigkeit einer Zahl, wenn jede Zahl gleich oft gezogen wird?\\
 Gezogene Kugeln: $ 6 \cdot 2058 $\\
-Jede gleich oft: $ \frac{6\cdot 2058}{49}=252 \Rightarrow r_(A_k)=\frac{252}{2058}=\frac{6}{49} $
+Jede gleich oft: $ \frac{6\cdot 2058}{49}=252 \Rightarrow r(A_k)=\frac{252}{2058}=\frac{6}{49} $
 
 \section{Deskriptive Statistik}\index{Statistik!deskriptive}
 
 \subsection{Stabdiagramm}\index{Stabdiagramm}
 \profnote{Beispiel aus dem Buch (Seite 24)}Bundestagswahl mit $ n = 43 371 190 $ gültigen Zweitstimmen. Dabei entsteht das folgende Stabdiagramm (Abb. \ref{fig:stabdiagramm1}).
 
-\includegraphicsdeluxe{stabdiagramm1.png}{Stabdiagramm Stimmenverteilung}{Aufteilung der Parteien in $ \% $ (Quelle: Buch)}{fig:stabdiagramm1}
+\includegraphicsdeluxe{stabdiagramm1.png}{Stabdiagramm Stimmenverteilung}{Aufteilung der Parteien in $ \% $ (Quelle: Stochastik für Einsteiger, Norbert Henze, Vieweg/Teubner)}{fig:stabdiagramm1}
 
 \subsection{Histogramm}\index{Histogramm}
-Bei 1000 Glühbirnen wurde die Lebensdauer getestet.\\ % \profnote{Die Glühbirnen sind ja jetzt verboten. Ich habe im Internet auch einen ganzen Karton bestellt.}
+\includegraphicsdeluxe{histogramm1.jpg}{Beispiel für ein Histogramm}{Rechteckfläche $ = $ relative Häufigkeit, Höhe $ \times $ Breite $ = $ relative Häufigkeit, Höhe $ = \frac{\textrm{relative Häufigkeit}}{\textrm{Breite}} $ }{fig:histogramm1}
+
+Bei 1000 Glühbirnen wurde die Lebensdauer getestet (Abb. \ref{fig:histogramm1}).\\ % \profnote{Die Glühbirnen sind ja jetzt verboten. Ich habe im Internet auch einen ganzen Karton bestellt.}
 \begin{tabular}{|c|c|c|c|c|}
 \hline Stunden & ausgefallene Glühbirnen & relative Häufigkeit & Höhe \\ 
 \hline 0-50 & 20 & 0.02 & 0.0004 \\ 
@@ -60,8 +62,6 @@ Bei 1000 Glühbirnen wurde die Lebensdauer getestet.\\ % \profnote{Die Glühbirn
 \hline 800-1000 & 100 & 0.1 & 0.0005 \\ 
 \hline 
 \end{tabular} 
-
-\includegraphicsdeluxe{histogramm1.jpg}{Beispiel für ein Histogramm}{Rechteckfläche $ = $ relative Häufigkeit, Höhe $ \times $ Breite $ = $ relative Häufigkeit, Höhe $ = \frac{\textrm{relative Häufigkeit}}{\textrm{Breite}} $ }{fig:histogramm1}
 
 \subsection{Lagemaße}
 $ x_1, ..., x_n $ Zahlen. Suche Zahl l für die "grobe Lage".\\
