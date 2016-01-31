@@ -13,7 +13,7 @@
 \section{Zufallsexperimente}
 
 Experimente: Würfeln, Ergebnismenge $ \Omega = \{1,2,3,4,5,6\}$, Münze werfen: $ \Omega = \{K, Z\}$. Solange würfeln bis eine 6 kommt: $ \Omega = \{ 1,2,3,4,...\} = \N $\\
-\profnote{Man kann mehrere Eperimente auch zusammenfassen}n Einzelexperimente $ \Rightarrow $ Kartesisches Produkt: $ \Omega_1, \Omega_2, ...,  \Omega_n, \Omega = \Omega_1 \times \Omega_2 \times ... \times  \Omega_n $\\
+\profnote{Man kann mehrere Exerimente auch zusammenfassen}n Einzelexperimente $ \Rightarrow $ Kartesisches Produkt: $ \Omega_1, \Omega_2, ...,  \Omega_n, \Omega = \Omega_1 \times \Omega_2 \times ... \times  \Omega_n $\\
 Zum Beispiel erst würfeln, dann Münze: \\
 $ \Omega_1 = \{1,...,6\}, \Omega_2=\{K,Z\} \Rightarrow \Omega=\{(a,b) | a\in \Omega_1, b\in \Omega_2\}$\\
 Zweimal nacheinander würfeln: $ \underbrace{\Omega}_{1. Wurf}=\{(\underbrace{a}_{1.},\underbrace{b}_{2. Wurf}) : 1 \leq a,b \leq 6 \} $\\
@@ -30,16 +30,16 @@ $ \Omega=\{(a_1,...,a_6) | a_1 < a_2 < a_3 < a_4 < a_5 < a_6\}$ (ohne Reihenfolg
 
 \subsection{2. Ereignisse}
 $ A \subset \Omega$ heißt Ereignis, Ergebnis $ \omega $. A ist eingetreten, wenn $\omega \in A$. \\
-$\{\omega\} $ Elementarereignis\\
-$ \Omega $ sicheres Ereignis\\
-$\emptyset $ unmögliches Ereignis\\
-$A \cap B$ A und B sind eingetreten.\\
-$A\cup B$ A oder B\\
-$A_1\cap A_2\cap ... \cap A_n\cap$\\
-$A_1\cup A_2\cup ... \cup A_n\cup$\\
-$B \ A= \{\omega \in B : \omega \notin A \} $ B minus A. \\
-Gegenseitiges Komplement: $ \overline{A} = \Omega A = \{\omega : \omega \notin A \}$\\
-A, B heißen disjunkt, wenn $ A \cap B = \emptyset $. Für $ A \cup B $ schreibt man dann $A+B$\\
+$\{\omega\} $: Elementarereignis\\
+$ \Omega $: sicheres Ereignis\\
+$\emptyset $: unmögliches Ereignis\\
+$A \cap B$: A und B sind eingetreten.\\
+$A\cup B$: A oder B\\
+$A_1\cap A_2\cap ... \cap A_n$\\
+$A_1\cup A_2\cup ... \cup A_n$\\
+$B \setminus A= \{\omega \in B : \omega \notin A \} $: B minus A. \\
+Gegenseitiges Komplement: $ \overline{A} = \Omega \setminus A = \{\omega : \omega \notin A \}$\\
+A, B heißen disjunkt, wenn $ A \cap B = \emptyset $. Für $ A \cup B $ schreibt man dann $A+B$.\\
 
 \subsection{Zweimal Würfeln}
 A: erster Wurf 5 $\Rightarrow A=\{(5,1),(5,2),...(5,6)\}$\\
@@ -62,7 +62,7 @@ $\Rightarrow R=L \Box$\\
 
 \subsection{Zufallsvariable}
 
-Abbildung: $ X: \Omega \rightarrow \R$ heißt Zufallswariable, z.B. zweimal würfeln. X ist die Augensumme: $ X(\omega_1, \omega_2) = \omega_1+\omega_2$\\
+Abbildung: $ X: \Omega \rightarrow \R$ heißt Zufallsvariable, z.B. zweimal würfeln. X ist die Augensumme: $ X(\omega_1, \omega_2) = \omega_1+\omega_2$\\
 $ X_1$: erste Augenzahl\\
 $ X_2$: zweite Augenzahl\\
 $X = X_1+X_2$\\
@@ -81,7 +81,7 @@ $ \{X\leq Y\} = \{\omega\in\Omega | X(\omega) \leq Y(\omega) \}$\\
 \subsection{Indikatorfunktionen}
 $ I_{A}(\omega) = $ 1, falls $ \omega\in A $, sonst 0 ($A\in \Omega$). Die Indikatorfunktion I zeigt an, ob das Ereignis eingetreten ist oder nicht. \\
 $ I_{A\cap B} = I_A \cdot I_B $\\
-$ I_A = I\{A\} $ sind mögliche Schreibweisen im Buch. 
+$ I_A = I\{A\} $ sind mögliche Schreibweisen im Buch.\\ 
 $ I_{A_1\cap A_2\cap ... \cap A_n} = I_{A_1}\cdot I_{A_2}\cdot ... \cdot I_{A_n} $\\
 $ I_{\bar{A}} = 1 - I_A $\\
 $ I_A = I_A \cdot I_A$
@@ -91,7 +91,7 @@ $ I_A = I_A \cdot I_A$
 $ A_1, ..., A_n $ Ereignisse: $ X=I_{A_1} + I_{A_2} + ... + I_{A_n} $. X zählt, wie viele Ereignisse $A_1, ..., A_n$ eingetreten sind. \\
 $ X(\omega) = $ Anzahl der $A_i$, in denen $\omega$ liegt. $ \{X=n\} = A_1\cap A_2\cap ...\cap A_n$ und $ \{X=0\} = \bar{A_1} \cap \bar{A_2} \cap ... \cap \bar{A_n} $
 
-\paragraph{Beispiel:} Ein Treffer (1), Niete (0) Experiment wird n mal wiederholt. \\
+\paragraph{Beispiel:} Ein Treffer-Niete-Experiment wird n-mal wiederholt.\profnote{Treffer=1, Niete=0} \\
 $ \Omega=\{(a_1,a_2,...,a_n) : a_i=1/0 \} $\\
 $ A_j = \{\omega : \omega_j=1\} $ in j-ten Versuch Treffer\\
 $ X=I_{A_1} + I_{A_2} + ... + I_{A_n} $ zählt Anzahl der Treffer\\
@@ -100,7 +100,7 @@ $ X(\omega) = X(\omega_1, \omega_2, ..., \omega_n) = \omega_1 + \omega_2 + ... +
 \paragraph{Übung 3.5 (Buch)}
 $ \Omega = \{ ( \omega_1, \omega_2, \omega_3 ) | 1 \leq \omega_i \leq 6 \} $\\
 $ X: \Omega \rightarrow \R $\\
-$ (\omega_1, \omega_2, \omega_3) \rightarrow $ 100 wenn $\omega_1=6$\\
+$ (\omega_1, \omega_2, \omega_3) \rightarrow $ 100, wenn $\omega_1=6$\\
 $ (\omega_1, \omega_2, \omega_3) \rightarrow $ 50, falls $\omega_2=6$ und $\omega_1 \neq 6$\\
 $ (\omega_1, \omega_2, \omega_3) \rightarrow $ 10, falls $\omega_2 = 6$ und $\omega_a, \omega_2\neq 6$\\
 $ (\omega_1, \omega_2, \omega_3) \rightarrow $ -30, falls $\omega_1, \omega_2, \omega_3\neq 6$\\
